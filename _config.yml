@@ -107,15 +107,18 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
+  name             : "Remy Shea"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  bio              : "Data Analyst with experience in healthcare and medical research. Skilled in Python and machine learning, with a demonstrated interest in creating clear and engaging visualizations. Team-oriented, solution-driven, and inquisitive. BSc in Physics with a minor in Economics from The University of British Columbia.
+
+I approach data science through a rigorous, scientific lens motivated by my academic background. This allows me to translate my creativity and problem solving skills into clear and actionable insights for my team. In every scenario, I always strive deeper understanding of the data, allowing me to use the best tool for the job, and communicate key insights to shareholders. I love to explore, inform, support and build solutions to drive high level decision-making."
+
+  location         : "Vancouver, B.C."
+  email            : "shea.remy@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: mailto:your.name@email.com
+      url: mailto:shea.remy@gmail.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -127,11 +130,13 @@ author:
       # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
+      url: "https://github.com/remyshea"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
-
+      url: "https://instagram.com/remy.shea"
+    # - label: "Linkedin"
+    #   icon: "fab fa-fw fa-linkedin"
+    #   url: "https://linkedin.com/in/remy-shea"
 # Site Footer
 footer:
   links:
