@@ -108,7 +108,7 @@ analytics:
 # Site Author
 author:
   name             : "Remy Shea"
-  avatar           : "/images/headshot.jpg"
+  avatar           : "/assets/images/headshot.jpg"
   bio              : "Make Data Science Science Again."
 
   location         : "Vancouver, B.C."
@@ -131,10 +131,10 @@ author:
       url: "https://github.com/remyshea"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/remy.shea"
-    # - label: "Linkedin"
-    #   icon: "fab fa-fw fa-linkedin"
-    #   url: "https://linkedin.com/in/remy-shea"
+      # url: "https://instagram.com/remy.shea"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/remy-shea"
 # Site Footer
 footer:
   links:
