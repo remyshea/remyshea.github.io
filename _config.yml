@@ -108,7 +108,7 @@ analytics:
 # Site Author
 author:
   name             : "Remy Shea"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "/images/headshot.jpg"
   bio              : "Make Data Science Science Again."
 
   location         : "Vancouver, B.C."
