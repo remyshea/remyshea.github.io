@@ -34,7 +34,7 @@ The code for this project can be seen on my GitHub, [here](https://github.com/re
 
 ---
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQGrMRqDZL0fvc6tOw9x8JMZbB8meHUS_Upsb-Eni9enLsXNzZBnYzQA8XEbGX49snl1AVwecbIfzFn/embed?start=false&loop=false&delayms=15000" frameborder="0" width="1440" height="839" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQGrMRqDZL0fvc6tOw9x8JMZbB8meHUS_Upsb-Eni9enLsXNzZBnYzQA8XEbGX49snl1AVwecbIfzFn/embed?start=false&loop=false&delayms=15000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
 </iframe>
 
 ---
@@ -65,11 +65,9 @@ In recent years, the NBA has seen a meteoric rise in popularity, particularly in
 
 For a long time, this method of categorizing players served as a useful, and mostly accurate heuristic to help people understand the game of basketball. The five positions of basketball have acted as a lens through which decisions of team composition and strategy have been viewed, however, a relatively recent shift in the way basketball is being played has begun to blur the lines that separate these positions more than ever. The average NBA team attempted 29.8 3-pt shots in the 2017-18 season dwarfing the 2007-08 season figure of 18.04.
 
-<div class='portrait'>
-<img src="/assets/images/nba-clustering/KD.png" style="border-radius: 15px">
-</div>
-<div class='portrait'>
-<img src="/assets/images/nba-clustering/BG.png" style="border-radius: 15px">
+<div class='square'>
+<img src="/assets/images/nba-clustering/KD.png" style="border-radius: 15px; float: left">
+<img src="/assets/images/nba-clustering/BG.png" style="border-radius: 15px; float: right">
 </div>
 
 A good example of the divergence between position and play-style can be observed between 6'11" superstar Kevin Durant, who does not play basketball in the same way that 6'11" Blake Griffin might, even though they both spent the majority of their minutes at the Power Forward position this year. In light of this, there is a clear need for the definition of new player positions and metrics by which to measure player tendencies, both to aide the understanding of viewers and inform the conversation around team composition and game-planning.
@@ -97,22 +95,18 @@ Of these, only 354 NBA players met the selection criteria. The general heuristic
 ### <a href = "#methods">Feature Engineering and the Variance Inflation Factor</a>
 Many of the features originally gathered were highly collinear. Points-per-game is highly correlated with field-goals-per-game, for example. The need to produce features that were both relatively independent of one another whilst remaining interpretable and still capture the majority of the variance was clear. Like the pair-wise correlation, the variance inflation factor (VIF) correlates with the other features in the feature-set. It is, more specifically, a measure of how well a given feature or stat can be predicted given all the other features in the dataset, and serves as a metric of evaluating which features needlessly complicate the dataset.
 
-<div class='portrait'>
-<img src="/assets/images/nba-clustering/VIF_raw.png" style="border-radius: 15px">
-</div>
-<div class='portrait'>
-<img src="/assets/images/nba-clustering/VIF_feat_eng.png" style="border-radius: 15px">
+<div class='square'>
+<img src="/assets/images/nba-clustering/VIF_raw.png" style="border-radius: 15px; float: left">
+<img src="/assets/images/nba-clustering/VIF_feat_eng.png" style="border-radius: 15px; float: right">
 </div>
 
 Particular care was taken in the selection and engineering of features to avoid stats which had strong components of team performance, team composition, individual skill or talent, etc. The idea behind this is that we would like to determine the given archetype a player might fit into, whilst controlling for the effects that being on a better team, or playing with better players might have. Ultimately, the goal was to isolate the decision making and tendencies of individual players, as this is where the current role definitions and statistics fall short.
 
 After some extensive feature engineering, the 81 dimensions in which our data originally existed were reduced to 27 features, shown below and to the left. The mean pairwise correlation of the raw data was 0.0861, with a standard deviation of 0.0877. Through feature engineering, this was reduced to a mean of 0.0682 and a standard deviation of 0.0831. The hand-crafted features, shown below and on the right, reduced these figures further to 0.0608 and 0.043 respectively.
 
-<div class='square'>
-<img src="/assets/images/nba-clustering/feat_eng_heatmap.png" style="border-radius: 15px">
-</div>
-</div class='square'>
-<img src="/assets/images/nba-clustering/manual_corr_heatmap.png" style="border-radius: 15px">
+<div class='landscape'>
+<img src="/assets/images/nba-clustering/feat_eng_heatmap.png" style="border-radius: 15px; float: left">
+<img src="/assets/images/nba-clustering/manual_corr_heatmap.png" style="border-radius: 15px; float: right">
 </div>
 
 <a id = "clustering"></a>
@@ -137,22 +131,18 @@ One common metric used when evaluating clustering algorithms is the silhouette s
 ### <a href = "#methods">Visualization using PCA & t-SNE</a>
 When datasets go beyond three or four features, they become somewhere between very difficult and impossible for the human brain to visualize properly. Principal component analysis is a dimensionality reduction technique that, among other uses mentioned above, allows higher dimensional data to be visualized in lower dimensions. In English, this means that we can boil down large and complex data sets to a few key features that allow us to visually recognize the separation between groups. The drawback is that interpretability of these new features is mostly out the window, and theres no guarantee that three or four principal components are enough to explain the variance in the dataset.
 
-<div class='square'
-<img src="/assets/images/nba-clustering/full_pca_pca_labelled.png" style="border-radius: 15px">
-</div>
-<div class='square'>
-<img src="/assets/images/nba-clustering/full_pca_pca.png" style="border-radius: 15px">
+<div class='landscape'
+<img src="/assets/images/nba-clustering/full_pca_pca_labelled.png" style="border-radius: 15px; float: left">
+<img src="/assets/images/nba-clustering/full_pca_pca.png" style="border-radius: 15px; float: right">
 </div>
 
 The limitations of this approach become clear in the graphs on the right. A DBSCAN is used to cluster the data, and achieves a great silhouette score of 0.647. In attempting to visualize this step, however, the two-dimensional chart created from the first two principal components which only capture 65% of the variance in the data makes it seem as if the clusters were chosen at random.
 
 Another approach to visualizing high dimensional data is called t-distributed stochastic neighbor embedding, pronounced 'tee-snee' (like in sneeze). This approach also has interpretability issues but typically does a better job of visualizing in lower dimensions than a PCA, but surrenders even more interpretability. Essentially, it scatters the data points onto a low-dimensional ,easily visualizable space, like an area or a line, and allowing the members of it's own class pull, and the others push, that point in a given direction on that low-dimensional space, determined by the distance of that datapoint to surrounding data points in the higher dimensional space.
 
-<div class='square'>
-<img src="/assets/images/nba-clustering/feat_eng_tsne_labelled.png" style="border-radius: 15px">
-</div>
-<div class='square'>
-<img src="/assets/images/nba-clustering/feat_eng_tsne.png" style="border-radius: 15px">
+<div class='landscape'>
+<img src="/assets/images/nba-clustering/feat_eng_tsne_labelled.png" style="border-radius: 15px; float: left">
+<img src="/assets/images/nba-clustering/feat_eng_tsne.png" style="border-radius: 15px; float: right">
 </div>
 
 The results of removing features during the process of feature engineering can be seen by contrasting this t-SNE visualization of a K-Means clustering algorithm on the post-feature-engineering data with the pair of plots above. The silhouette score, unremarkably, is an abysmal 0.145.
