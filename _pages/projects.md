@@ -4,7 +4,7 @@ title: "Projects"
 permalink: "/projects/"
 author_profile: true
 header:
-  image: "/assets/images/vancouver.jpg"
+  image: "/assets/images/vancouver_2.jpg"
 ---
 {% include base_path %}
 {% include group-by-array collection=site.posts field="tags" %}
