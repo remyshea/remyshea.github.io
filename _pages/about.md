@@ -3,7 +3,7 @@ title: "About"
 permalink: "/about/"
 # author_profile: true
 header:
-  image: "/assets/images/dinosaur.jpg"
+  image: "/assets/images/dinosaur_short.jpg"
 ---
 Hi! My name is Remy, welcome to my portfolio! I'm a Data Scientist with work experience in healthcare and medical research. I'm a skilled machine learning practitioner, with a demonstrated interest in creating clear and engaging visualizations, as I'm sure you'll see from the projects living here on the portfolio. Team-oriented, solution-driven, and inquisitive, I earned my BSc in Physics and minor in Economics from The University of British Columbia in 2018.
 
