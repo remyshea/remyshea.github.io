@@ -15,26 +15,18 @@ python code block:
     def test_function(x,y):
       z = np.sum(x,y)
       return z
-```
-Here ma face:
-<img src="{{ site.url }}{{ site.baseurl }}/assets/images/headshot.jpg" alt="">
-
-Here math:
-
-$$x+y=z$$ -->
+``` -->
 
 # Clustering NBA Players through Unsupervised Learning
 ## Identifying player types and developing new metrics for evaluating professional basketball players.
 
 Remy Shea, May 2019
 
-This was initially developed as my capstone project for the Data Science Immersive program at General Assembly Seattle.
-
-The code for this project can be seen on my GitHub, [here](https://github.com/remyshea/nba-player-clustering).
+This was initially developed as my capstone project for the Data Science Immersive program at General Assembly Seattle. The code for this project can be seen on my GitHub, [here](https://github.com/remyshea/nba-player-clustering).
 
 ---
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQGrMRqDZL0fvc6tOw9x8JMZbB8meHUS_Upsb-Eni9enLsXNzZBnYzQA8XEbGX49snl1AVwecbIfzFn/embed?start=false&loop=false&delayms=15000" frameborder="0" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQGrMRqDZL0fvc6tOw9x8JMZbB8meHUS_Upsb-Eni9enLsXNzZBnYzQA8XEbGX49snl1AVwecbIfzFn/embed?start=false&loop=false&delayms=15000" frameborder="0" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
 </iframe>
 
 ---

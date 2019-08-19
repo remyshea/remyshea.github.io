@@ -1,7 +1,7 @@
 ---
 title: "Motion Detection in Dual-Mode Endomicroscopy"
 date: 2019-08-17
-tags: [image processing, classification, machine learning]
+tags: [image processing, classification, biomedical optics]
 #header:
   #images: "/assets/images/"
 excerpt: "Motion Detection in Dual-Mode Endomicroscopy"
@@ -12,11 +12,9 @@ mathjax: true
 
 Remy Shea, BC Cancer Agency, February 2019
 
-This is work I had completed during my time at the BC Cancer Research Center's Integrative Oncology Department under Dr. Calum MacAulay. The work was presented at the 2019 SPIE Photonics West conference in San Francisco in February.
-
 ---
 
-<iframe src=”/assets/pdfs/DME Poster BCCRC.pdf" width=”100%” height=”100%”>
+<iframe src="{{ site.url }}{{ site.baseurl }}/assets/pdfs/DME Poster BCCRC.pdf" frameborder="0" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
 </iframe>
 
 ---
