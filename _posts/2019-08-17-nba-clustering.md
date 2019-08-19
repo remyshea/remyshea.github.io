@@ -48,14 +48,16 @@ This was initially developed as my capstone project for the Data Science Immersi
 In recent years, the NBA has seen a meteoric rise in popularity, particularly in the last two decades or so where the leagues revenue tripled from 2.66 billion USD in the 2000-01 season, to an annual revenue of [8 billion USD in the 2017-18 season](https://www.statista.com/topics/967/national-basketball-association/). Game 5 of the 2017-18 NBA finals drew an astounding 50.6 million viewers. As the NBA has grown over the years, so too has the game of basketball and those who play it. NBA basketball has five official positions; Point Guard, Shooting Guard, Small Forward, Power Forward and Center. Each team must have one player at each position on the floor at all times.
 
 <div class='landscape'>
-<img src="/assets/images/nba-clustering/Basketball-Positions.jpg">
+<img src="/assets/images/nba-clustering/Basketball-Positions.jpg"> The five traditional positions of basketball.
 </div>
 
 For a long time, this method of categorizing players served as a useful, and mostly accurate heuristic to help people understand the game of basketball. The five positions of basketball have acted as a lens through which decisions of team composition and strategy have been viewed, however, a relatively recent shift in the way basketball is being played has begun to blur the lines that separate these positions more than ever. The average NBA team attempted 29.8 3-pt shots in the 2017-18 season dwarfing the 2007-08 season figure of 18.04.
 
 <div class='square'>
 <img src="/assets/images/nba-clustering/KD.png" style="border-radius: 15px; float: left">
+Kevin Durant pulling up for a jump shot.
 <img src="/assets/images/nba-clustering/BG.png" style="border-radius: 15px; float: right">
+Blake Griffin having a great time dunking.
 </div>
 
 A good example of the divergence between position and play-style can be observed between 6'11" superstar Kevin Durant, who does not play basketball in the same way that 6'11" Blake Griffin might, even though they both spent the majority of their minutes at the Power Forward position this year. In light of this, there is a clear need for the definition of new player positions and metrics by which to measure player tendencies, both to aide the understanding of viewers and inform the conversation around team composition and game-planning.
@@ -75,6 +77,7 @@ The NBA today has 30 teams, 15 in each conference. Each team is limited to a ros
 
 <div class='square'>
 <img src="/assets/images/nba-clustering/raw_data_heatmap.png" style="border-radius: 15px">
+Pair-wise pearson correlation heatmap of all 81 original features in the dataset.
 </div>
 
 Of these, only 354 NBA players met the selection criteria. The general heuristic is that a data set should have no more than the square root of the number of observations in features. Our 354 player dataset then should have at maximum around 18 features. It was immediately obvious that the number of dimensions of the data vastly exceeded an appropriate amount for the number of data points available, and drastic steps towards feature selection may be necessary. The reason for this is that, with enough features, even massive datasets can become too sparse. This is the essence of the 'Curse of Dimensionality'. The approach to addressing this is discussed below, in the feature-engineering section.
@@ -84,8 +87,8 @@ Of these, only 354 NBA players met the selection criteria. The general heuristic
 Many of the features originally gathered were highly collinear. Points-per-game is highly correlated with field-goals-per-game, for example. The need to produce features that were both relatively independent of one another whilst remaining interpretable and still capture the majority of the variance was clear. Like the pair-wise correlation, the variance inflation factor (VIF) correlates with the other features in the feature-set. It is, more specifically, a measure of how well a given feature or stat can be predicted given all the other features in the dataset, and serves as a metric of evaluating which features needlessly complicate the dataset.
 
 <div class='square'>
-<img src="/assets/images/nba-clustering/VIF_raw.png" style="border-radius: 15px; float: left">
-<img src="/assets/images/nba-clustering/VIF_feat_eng.png" style="border-radius: 15px; float: right">
+<img src="/assets/images/nba-clustering/VIF_raw.png" style="border-radius: 15px; float: left"> Variance inflation factor before feature selection. Very large (even infinite) VIF scores.
+<img src="/assets/images/nba-clustering/VIF_feat_eng.png" style="border-radius: 15px; float: right"> Variance inflation factor after feature selection. The remaining features do not predict each others values as well.
 </div>
 
 Particular care was taken in the selection and engineering of features to avoid stats which had strong components of team performance, team composition, individual skill or talent, etc. The idea behind this is that we would like to determine the given archetype a player might fit into, whilst controlling for the effects that being on a better team, or playing with better players might have. Ultimately, the goal was to isolate the decision making and tendencies of individual players, as this is where the current role definitions and statistics fall short.
@@ -93,8 +96,8 @@ Particular care was taken in the selection and engineering of features to avoid 
 After some extensive feature engineering, the 81 dimensions in which our data originally existed were reduced to 27 features, shown below and to the left. The mean pairwise correlation of the raw data was 0.0861, with a standard deviation of 0.0877. Through feature engineering, this was reduced to a mean of 0.0682 and a standard deviation of 0.0831. The hand-crafted features, shown below and on the right, reduced these figures further to 0.0608 and 0.043 respectively.
 
 <div class='landscape'>
-<img src="/assets/images/nba-clustering/feat_eng_heatmap.png" style="border-radius: 15px; float: left">
-<img src="/assets/images/nba-clustering/manual_corr_heatmap.png" style="border-radius: 15px; float: right">
+<img src="/assets/images/nba-clustering/feat_eng_heatmap.png" style="border-radius: 15px; float: left"> Pair-wise correlation heatmap after feature selection.
+<img src="/assets/images/nba-clustering/manual_corr_heatmap.png" style="border-radius: 15px; float: right"> Pair-wise correlation heatmap of the engineered features.
 </div>
 
 <a id = "clustering"></a>
@@ -102,13 +105,14 @@ After some extensive feature engineering, the 81 dimensions in which our data or
 Unsupervised learning is the process of finding patterns and relationships in the data without a specific eye towards a target feature to either predict or classify, and was used to separate the players into classes here. K-means clustering is one such unsupervised learning technique.
 
 <div class='square'>
-<img src="/assets/images/nba-clustering/KMeans.gif">
+<img src="/assets/images/nba-clustering/KMeans.gif"> Visual representation of a k-means clustering algorithm.
 </div>
 
 K-means clustering attempts to identify a specified amount of distinct groups in the dataset by randomly allocating 'centroids' to coordinates within the feature space. Each observation is then assigned to the cluster of its nearest centroid. After this, the centroid's position is updated with the average location of each point in the centroid's cluster, and data points are once again assigned to the cluster of the nearest centroid, as the process repeats.
 
 <div class='square'>
 <img src="/assets/images/nba-clustering/DBSCAN.gif>
+Visual representation of a dbscan clustering algorithm.
 </div>
 
 DBSCAN is an alternative clustering method, where instead of assigning each data point to the nearest cluster and iteratively moving centroids according to cluster means, clusters are identified by picking a point, scanning within a certain radius for neighbouring data points and grouping those data points to the same cluster if enough data points are identified in the vicinity. This process repeats until no more data clusters can be identified. One strength of DBSCAN over K-Means clustering, given that it is a non-centroid based algorithm, is that it limits the effects of outliers, or stragglers, on clusters.
