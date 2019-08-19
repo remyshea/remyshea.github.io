@@ -1,14 +1,316 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-08-18T10:59:43-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Remy Shea</title><subtitle>Data Science Project Portfolio.</subtitle><author><name>Remy Shea</name><email>shea.remy@gmail.com</email></author><entry><title type="html">NBA Player Clustering</title><link href="http://localhost:4000/nba-clustering/" rel="alternate" type="text/html" title="NBA Player Clustering" /><published>2019-08-17T00:00:00-07:00</published><updated>2019-08-17T00:00:00-07:00</updated><id>http://localhost:4000/nba-clustering</id><content type="html" xml:base="http://localhost:4000/nba-clustering/">&lt;h1 id=&quot;dis-a-test&quot;&gt;Dis a test&lt;/h1&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-08-18T17:12:08-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Remy Shea</title><subtitle>Data Science Project Portfolio.</subtitle><author><name>Remy Shea</name><email>shea.remy@gmail.com</email></author><entry><title type="html">Subreddit Classification</title><link href="http://localhost:4000/subreddit-classification/" rel="alternate" type="text/html" title="Subreddit Classification" /><published>2019-08-18T00:00:00-07:00</published><updated>2019-08-18T00:00:00-07:00</updated><id>http://localhost:4000/subreddit-classification</id><content type="html" xml:base="http://localhost:4000/subreddit-classification/">&lt;h1 id=&quot;subreddit-classification&quot;&gt;Subreddit Classification&lt;/h1&gt;
+&lt;h2 id=&quot;distinguishing-between-aita-and-tifu-posts&quot;&gt;Distinguishing between AITA and TIFU posts&lt;/h2&gt;
 
-&lt;p&gt;python code block:&lt;/p&gt;
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;    &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;numpy&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;as&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;test_function&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-      &lt;span class=&quot;n&quot;&gt;z&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;np&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;sum&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;x&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;y&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-      &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;z&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;Here ma face:
-&lt;img src=&quot;http://localhost:4000/assets/images/headshot.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;Remy Shea, April 2019&lt;/p&gt;
 
-&lt;p&gt;Here math:&lt;/p&gt;
+&lt;p&gt;This was analysis was performed during my time at General Assembly Seattle’s Data Science Immersive program. The code for this project can be seen on my GitHub, &lt;a href=&quot;https://github.com/remyshea/subreddit-classification&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;script type=&quot;math/tex; mode=display&quot;&gt;x+y=z&lt;/script&gt;</content><author><name>Remy Shea</name><email>shea.remy@gmail.com</email></author><category term="unsupervised learning" /><category term="sports analytics" /><category term="data science" /><summary type="html">NBA Player Clustering and Feature Engineering</summary></entry></feed>
+&lt;hr /&gt;
+
+&lt;iframe src=&quot;http://localhost:4000/assets/pdfs/Subreddit Classification.pdf&quot; frameborder=&quot;0&quot; width=&quot;960&quot; height=&quot;569&quot; allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;
+&lt;/iframe&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
+&lt;p&gt;In this project, the Reddit API was used to gather text-based data for a classification problem. Two corpora were assembled, consisting of documents which were individual user-made submissions to one of the two popular, and somewhat similar subreddits &lt;code class=&quot;highlighter-rouge&quot;&gt;/r/amitheasshole&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;/r/tifu&lt;/code&gt; respectively.&lt;br /&gt; Of the many classification algorithms used to model the data, a Adaptive Boosting model with 60 estimators and a learning rate of 0.8 performed best. The model achieved an accuracy score of 96.1% on testing data, which was about a relative 2% increase in performance compared to the average model which achieved 94.3% accuracy.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;libraries&quot;&gt;Libraries&lt;/h2&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;numpy&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;pandas&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;matplotlib.pyplot&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;seaborn&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;requests&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;time&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;regex&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;stopwords&lt;/code&gt; from &lt;code class=&quot;highlighter-rouge&quot;&gt;nltk&lt;/code&gt;’s &lt;code class=&quot;highlighter-rouge&quot;&gt;corpus&lt;/code&gt; library&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;CountVectorizer&lt;/code&gt; &amp;amp; &lt;code class=&quot;highlighter-rouge&quot;&gt;TfidfVectorizer&lt;/code&gt; from &lt;code class=&quot;highlighter-rouge&quot;&gt;sklearn&lt;/code&gt;’s &lt;code class=&quot;highlighter-rouge&quot;&gt;feature_extraction.text&lt;/code&gt; library&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;Pipeline&lt;/code&gt; from &lt;code class=&quot;highlighter-rouge&quot;&gt;sklearn&lt;/code&gt;’s &lt;code class=&quot;highlighter-rouge&quot;&gt;pipeline&lt;/code&gt; library&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;train_test_split&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;GridSearchCV&lt;/code&gt; &amp;amp; &lt;code class=&quot;highlighter-rouge&quot;&gt;RandomizedSearchCV&lt;/code&gt; from &lt;code class=&quot;highlighter-rouge&quot;&gt;sklearn&lt;/code&gt;’s &lt;code class=&quot;highlighter-rouge&quot;&gt;model_selection&lt;/code&gt; library&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;LogisticRegression&lt;/code&gt; from &lt;code class=&quot;highlighter-rouge&quot;&gt;sklearn&lt;/code&gt;’s &lt;code class=&quot;highlighter-rouge&quot;&gt;linear_model&lt;/code&gt; library&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;DecisionTreeClassifier&lt;/code&gt; from &lt;code class=&quot;highlighter-rouge&quot;&gt;sklearn&lt;/code&gt;’s &lt;code class=&quot;highlighter-rouge&quot;&gt;tree&lt;/code&gt; library&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;GradientBoostingClassifier&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;AdaBoostClassifier&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;RandomForestClassifier&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;BaggingClassifier&lt;/code&gt; from &lt;code class=&quot;highlighter-rouge&quot;&gt;sklearn&lt;/code&gt;’s &lt;code class=&quot;highlighter-rouge&quot;&gt;ensemble&lt;/code&gt; library&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;KNeighborsClassifier&lt;/code&gt; from &lt;code class=&quot;highlighter-rouge&quot;&gt;sklearn&lt;/code&gt;’s &lt;code class=&quot;highlighter-rouge&quot;&gt;neighbors&lt;/code&gt; library&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;MultinomialNB&lt;/code&gt; from &lt;code class=&quot;highlighter-rouge&quot;&gt;sklearn&lt;/code&gt;’s &lt;code class=&quot;highlighter-rouge&quot;&gt;naive_bayes&lt;/code&gt; library&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;SVC&lt;/code&gt; from &lt;code class=&quot;highlighter-rouge&quot;&gt;sklearn&lt;/code&gt;’s &lt;code class=&quot;highlighter-rouge&quot;&gt;svm&lt;/code&gt; library&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;accuracy_score&lt;/code&gt;, &lt;code class=&quot;highlighter-rouge&quot;&gt;roc_auc_score&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;confusion_matrix&lt;/code&gt; from &lt;code class=&quot;highlighter-rouge&quot;&gt;sklearn&lt;/code&gt;’s &lt;code class=&quot;highlighter-rouge&quot;&gt;metrics&lt;/code&gt; library&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;outline&quot;&gt;Outline&lt;/h2&gt;
+&lt;p&gt;The challenge was to build a model that could correctly predict whether a document belonged to one of the two corpora based upon its text features. In layman’s terms, the question we are trying to answer is this:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;h2 id=&quot;could-we-tell-the-difference-between-a-tifu-post-and-a-aita-post&quot;&gt;Could we tell the difference between a TIFU post and a AITA post?&lt;/h2&gt;
+  &lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;If we are to interpret results from this analysis, it is necessary for us to understand the differences between the two subreddits in the first place.&lt;/p&gt;
+&lt;h3 id=&quot;rtifu&quot;&gt;/r/tifu&lt;/h3&gt;
+&lt;p&gt;The subreddit &lt;code class=&quot;highlighter-rouge&quot;&gt;/r/tifu&lt;/code&gt; is a very popular subreddit whose name is an acronym for the humble admission: “Today, I F***ed Up”. The sub has 14.2 million subscribers at the time of the analysis, and can see hundreds of posts a day. Posters to this subreddit seek comfort in their darkest, most embarassing hour by trying to put on a good show; partaking in the fanciful retelling of their most recent cringe-inducing moments to an audience of Schadenfreude-hungry redditors. The posts are lengthy text segments, detailing every step of the build up to the OP’s (original poster) disasterous mess-up and they typically describe the painfully awkward aftermath as well. The tone is characterized by a notable humility, and a light-heartedness that befits a situation where the catastrophe is so bad, all that you can do is step back and laugh at yourself.&lt;/p&gt;
+
+&lt;h3 id=&quot;ramitheasshole&quot;&gt;/r/amitheasshole&lt;/h3&gt;
+&lt;p&gt;The subreddit &lt;code class=&quot;highlighter-rouge&quot;&gt;/r/amitheasshole&lt;/code&gt;, often abbreviated ‘AITA’, is in some ways the opposite of &lt;code class=&quot;highlighter-rouge&quot;&gt;/r/tifu&lt;/code&gt;. The sub has a much smaller 632 thousand subscribers. Posters to this subreddit typically come seeking an ostensibly impartial third party council of random internet strangers to adjudicate on a recent situation in the OP’s life that could not be solved through conventional means like logic, and conversation. These are almost always in interpersonal relationships, and forms an interesting divergence from TIFU in that way (posts to TIFU can often be embarassing incidents that happen alone, when no one is watching. Doesn’t make the embarassment sting any less, however). The posts also tend to be much lengthier, with the OP laying out their side of an argument or difficult situation, and in the comments, redditors weight in on whether or not they think the OP is the ‘a**hole’ in that situation. The mood is characterized often by a confrontational, defensive, and sometimes accusatory tone. This forms the basis for the comparison carried out here.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;process&quot;&gt;Process&lt;/h2&gt;
+
+&lt;p&gt;The project followed a relatively simple datascience workflow&lt;/p&gt;
+&lt;ol&gt;
+  &lt;li&gt;Define the Problem
+    &lt;ul&gt;
+      &lt;li&gt;Can we classify between posts belonging to the subreddits /r/tifu and /r/amitheasshole?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Obtain the Data
+    &lt;ul&gt;
+      &lt;li&gt;Using Reddit’s API, collect and extract text documents from .JSON files&lt;/li&gt;
+      &lt;li&gt;Tokenize and clean the data, apply appropriate preprocessing steps&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Explore the Data
+    &lt;ul&gt;
+      &lt;li&gt;Examine the efficacy of the two preprocessing method, choose one&lt;/li&gt;
+      &lt;li&gt;Compare the relative frequencies of words in the common vocabularies of both subreddits&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Model the Data
+    &lt;ul&gt;
+      &lt;li&gt;For each model, fit to the training data using a grid search or randomized search&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Evaluate the Model
+    &lt;ul&gt;
+      &lt;li&gt;Score the model’s performance over a series of metrics on the ‘unseen’ training data&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Answer the Problem
+    &lt;ul&gt;
+      &lt;li&gt;Examine the models, extract the best performer, and answer the question: Can we classify between posts belonging to the subreddits /r/tifu and /r/amitheasshole?&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;results&quot;&gt;Results&lt;/h2&gt;
+&lt;p&gt;The ultimate result is an emphatic yes: we can indeed determine whether a document of text belongs to one of /r/tifu or /r/amitheasshole. We can do so with around 96% accuracy using an adaptive boosting classifier comprised of 60 decision trees and a learning rate of 0.8. That being said, many alternative models also performed rather well, and the reason for choosing the AdaBoost classifier over other models was purely because of it’s slightly better performance, with not much regard to interpretability.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;h2 id=&quot;discussion&quot;&gt;Discussion&lt;/h2&gt;
+
+&lt;p&gt;I think this project was an interesting exploration of interacting with an API, being responsible for the gathering of data all the way through to the very end in answering the question we pose ourselves. I would have liked more time to examine the effect of different types of inputs beyond merely text features into our models, as well as perhaps taking a closer look at the overlap, and interesting divergence in the vocabularies of the two very similar subreddits.&lt;/p&gt;
+
+&lt;p&gt;Additionally, using these models to predict entirely novel sources of text, like for example entirely different subreddits to estimate their proximity to either one or the other of the two examined subreddits would have been indeed very interesting. Finally, I would be interested in taking a closer look at the posts that the model incorrectly classified; perhaps there is some common theme among them, whose nature can be capture by another input to my model? I may return to this project at another time.&lt;/p&gt;</content><author><name>Remy Shea</name><email>shea.remy@gmail.com</email></author><category term="natural language processing" /><category term="classification" /><category term="data science" /><summary type="html">Subreddit Classification</summary></entry><entry><title type="html">NBA Player Clustering</title><link href="http://localhost:4000/nba-clustering/" rel="alternate" type="text/html" title="NBA Player Clustering" /><published>2019-08-17T00:00:00-07:00</published><updated>2019-08-17T00:00:00-07:00</updated><id>http://localhost:4000/nba-clustering</id><content type="html" xml:base="http://localhost:4000/nba-clustering/">&lt;!-- # Dis a test
+
+python code block:
+```python
+    import numpy as np
+    def test_function(x,y):
+      z = np.sum(x,y)
+      return z
+``` --&gt;
+
+&lt;h1 id=&quot;clustering-nba-players-through-unsupervised-learning&quot;&gt;Clustering NBA Players through Unsupervised Learning&lt;/h1&gt;
+&lt;h2 id=&quot;identifying-player-types-and-developing-new-metrics-for-evaluating-professional-basketball-players&quot;&gt;Identifying player types and developing new metrics for evaluating professional basketball players.&lt;/h2&gt;
+
+&lt;p&gt;Remy Shea, May 2019&lt;/p&gt;
+
+&lt;p&gt;This was initially developed as my capstone project for the Data Science Immersive program at General Assembly Seattle. The code for this project can be seen on my GitHub, &lt;a href=&quot;https://github.com/remyshea/nba-player-clustering&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;iframe src=&quot;https://docs.google.com/presentation/d/e/2PACX-1vQGrMRqDZL0fvc6tOw9x8JMZbB8meHUS_Upsb-Eni9enLsXNzZBnYzQA8XEbGX49snl1AVwecbIfzFn/embed?start=false&amp;amp;loop=false&amp;amp;delayms=15000&quot; frameborder=&quot;0&quot; width=&quot;960&quot; height=&quot;569&quot; allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;
+&lt;/iframe&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;a id=&quot;table_of_contents&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;table-of-contents&quot;&gt;Table of Contents&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;&lt;a href=&quot;#motivation&quot;&gt;Motivation&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#goal&quot;&gt;Goal&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#methods&quot;&gt;Methods&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#feature_selection&quot;&gt;Feature Selection&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#feature_engineering&quot;&gt;Feature Engineering&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#clustering&quot;&gt;Clustering&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#visualization&quot;&gt;Visualization&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#discussion&quot;&gt;Discussion&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#next_steps&quot;&gt;Next Steps&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#data_sources&quot;&gt;Data Sources&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#advanced_methods&quot;&gt;Advanced Methods&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#new_uses&quot;&gt;New Uses&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#references&quot;&gt;References&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;a id=&quot;motivation&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;motivation&quot;&gt;&lt;a href=&quot;#table_of_contents&quot;&gt;Motivation&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;In recent years, the NBA has seen a meteoric rise in popularity, particularly in the last two decades or so where the leagues revenue tripled from 2.66 billion USD in the 2000-01 season, to an annual revenue of &lt;a href=&quot;https://www.statista.com/topics/967/national-basketball-association/&quot;&gt;8 billion USD in the 2017-18 season&lt;/a&gt;. Game 5 of the 2017-18 NBA finals drew an astounding 50.6 million viewers. As the NBA has grown over the years, so too has the game of basketball and those who play it. NBA basketball has five official positions; Point Guard, Shooting Guard, Small Forward, Power Forward and Center. Each team must have one player at each position on the floor at all times.&lt;/p&gt;
+
+&lt;div class=&quot;landscape&quot;&gt;
+&lt;img src=&quot;/assets/images/nba-clustering/Basketball-Positions.jpg&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;For a long time, this method of categorizing players served as a useful, and mostly accurate heuristic to help people understand the game of basketball. The five positions of basketball have acted as a lens through which decisions of team composition and strategy have been viewed, however, a relatively recent shift in the way basketball is being played has begun to blur the lines that separate these positions more than ever. The average NBA team attempted 29.8 3-pt shots in the 2017-18 season dwarfing the 2007-08 season figure of 18.04.&lt;/p&gt;
+
+&lt;div class=&quot;square&quot;&gt;
+&lt;img src=&quot;/assets/images/nba-clustering/KD.png&quot; style=&quot;border-radius: 15px; float: left&quot; /&gt;
+&lt;img src=&quot;/assets/images/nba-clustering/BG.png&quot; style=&quot;border-radius: 15px; float: right&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;A good example of the divergence between position and play-style can be observed between 6’11” superstar Kevin Durant, who does not play basketball in the same way that 6’11” Blake Griffin might, even though they both spent the majority of their minutes at the Power Forward position this year. In light of this, there is a clear need for the definition of new player positions and metrics by which to measure player tendencies, both to aide the understanding of viewers and inform the conversation around team composition and game-planning.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;a id=&quot;goal&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;goal&quot;&gt;&lt;a href=&quot;#table_of_contents&quot;&gt;Goal&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;To identify clusters of similar NBA players by their style of play through machine learning techniques, as well as to develop meaningful, interpretable metrics in order to inform the discussion around the constructing of rosters and building of game plans.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;a id=&quot;methods&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;methods&quot;&gt;&lt;a href=&quot;#table_of_contents&quot;&gt;Methods&lt;/a&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;a id=&quot;feature_selection&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;feature-selection-and-curse-of-dimensionality&quot;&gt;&lt;a href=&quot;#methods&quot;&gt;Feature Selection and Curse of Dimensionality&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;The NBA today has 30 teams, 15 in each conference. Each team is limited to a roster of 15 players at any one time. As such, the total number of people to meet the selection criteria for this analysis (played in more than 10 games and 500 minutes) is very limited. The original scraped dataset from &lt;a href=&quot;https://www.basketball-reference.com/&quot;&gt;basketball-reference.com&lt;/a&gt; for NBA players in the 2018-19 season contained 450 players and 81 features. A pair-wise correlation heat map shows that there is a lot of collinearity in this relatively massive feature-set; warmer colours indicate higher correlation.&lt;/p&gt;
+
+&lt;div class=&quot;square&quot;&gt;
+&lt;img src=&quot;/assets/images/nba-clustering/raw_data_heatmap.png&quot; style=&quot;border-radius: 15px&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Of these, only 354 NBA players met the selection criteria. The general heuristic is that a data set should have no more than the square root of the number of observations in features. Our 354 player dataset then should have at maximum around 18 features. It was immediately obvious that the number of dimensions of the data vastly exceeded an appropriate amount for the number of data points available, and drastic steps towards feature selection may be necessary. The reason for this is that, with enough features, even massive datasets can become too sparse. This is the essence of the ‘Curse of Dimensionality’. The approach to addressing this is discussed below, in the feature-engineering section.&lt;/p&gt;
+
+&lt;p&gt;&lt;a id=&quot;feature_engineering&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;feature-engineering-and-the-variance-inflation-factor&quot;&gt;&lt;a href=&quot;#methods&quot;&gt;Feature Engineering and the Variance Inflation Factor&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Many of the features originally gathered were highly collinear. Points-per-game is highly correlated with field-goals-per-game, for example. The need to produce features that were both relatively independent of one another whilst remaining interpretable and still capture the majority of the variance was clear. Like the pair-wise correlation, the variance inflation factor (VIF) correlates with the other features in the feature-set. It is, more specifically, a measure of how well a given feature or stat can be predicted given all the other features in the dataset, and serves as a metric of evaluating which features needlessly complicate the dataset.&lt;/p&gt;
+
+&lt;div class=&quot;square&quot;&gt;
+&lt;img src=&quot;/assets/images/nba-clustering/VIF_raw.png&quot; style=&quot;border-radius: 15px; float: left&quot; /&gt;
+&lt;img src=&quot;/assets/images/nba-clustering/VIF_feat_eng.png&quot; style=&quot;border-radius: 15px; float: right&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Particular care was taken in the selection and engineering of features to avoid stats which had strong components of team performance, team composition, individual skill or talent, etc. The idea behind this is that we would like to determine the given archetype a player might fit into, whilst controlling for the effects that being on a better team, or playing with better players might have. Ultimately, the goal was to isolate the decision making and tendencies of individual players, as this is where the current role definitions and statistics fall short.&lt;/p&gt;
+
+&lt;p&gt;After some extensive feature engineering, the 81 dimensions in which our data originally existed were reduced to 27 features, shown below and to the left. The mean pairwise correlation of the raw data was 0.0861, with a standard deviation of 0.0877. Through feature engineering, this was reduced to a mean of 0.0682 and a standard deviation of 0.0831. The hand-crafted features, shown below and on the right, reduced these figures further to 0.0608 and 0.043 respectively.&lt;/p&gt;
+
+&lt;div class=&quot;landscape&quot;&gt;
+&lt;img src=&quot;/assets/images/nba-clustering/feat_eng_heatmap.png&quot; style=&quot;border-radius: 15px; float: left&quot; /&gt;
+&lt;img src=&quot;/assets/images/nba-clustering/manual_corr_heatmap.png&quot; style=&quot;border-radius: 15px; float: right&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;&lt;a id=&quot;clustering&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;clustering--unsupervised-learning&quot;&gt;&lt;a href=&quot;#methods&quot;&gt;Clustering &amp;amp; Unsupervised Learning&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Unsupervised learning is the process of finding patterns and relationships in the data without a specific eye towards a target feature to either predict or classify, and was used to separate the players into classes here. K-means clustering is one such unsupervised learning technique.&lt;/p&gt;
+
+&lt;div class=&quot;square&quot;&gt;
+&lt;img src=&quot;/assets/images/nba-clustering/KMeans.gif&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;K-means clustering attempts to identify a specified amount of distinct groups in the dataset by randomly allocating ‘centroids’ to coordinates within the feature space. Each observation is then assigned to the cluster of its nearest centroid. After this, the centroid’s position is updated with the average location of each point in the centroid’s cluster, and data points are once again assigned to the cluster of the nearest centroid, as the process repeats.&lt;/p&gt;
+
+&lt;div class=&quot;square&quot;&gt;
+&amp;lt;img src=&quot;/assets/images/nba-clustering/DBSCAN.gif&amp;gt;
+&lt;/div&gt;
+
+&lt;p&gt;DBSCAN is an alternative clustering method, where instead of assigning each data point to the nearest cluster and iteratively moving centroids according to cluster means, clusters are identified by picking a point, scanning within a certain radius for neighbouring data points and grouping those data points to the same cluster if enough data points are identified in the vicinity. This process repeats until no more data clusters can be identified. One strength of DBSCAN over K-Means clustering, given that it is a non-centroid based algorithm, is that it limits the effects of outliers, or stragglers, on clusters.&lt;/p&gt;
+
+&lt;p&gt;One common metric used when evaluating clustering algorithms is the silhouette score, and it is the sole metric used in this project. The silhouette score of a clustering algorithm compares the spread of each cluster to the separation amongst clusters.&lt;/p&gt;
+
+&lt;p&gt;&lt;a id=&quot;visualization&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;visualization-using-pca--t-sne&quot;&gt;&lt;a href=&quot;#methods&quot;&gt;Visualization using PCA &amp;amp; t-SNE&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;When datasets go beyond three or four features, they become somewhere between very difficult and impossible for the human brain to visualize properly. Principal component analysis is a dimensionality reduction technique that, among other uses mentioned above, allows higher dimensional data to be visualized in lower dimensions. In English, this means that we can boil down large and complex data sets to a few key features that allow us to visually recognize the separation between groups. The drawback is that interpretability of these new features is mostly out the window, and theres no guarantee that three or four principal components are enough to explain the variance in the dataset.&lt;/p&gt;
+
+&lt;p&gt;&amp;lt;div class=’landscape’
+&lt;img src=&quot;/assets/images/nba-clustering/full_pca_pca_labelled.png&quot; style=&quot;border-radius: 15px; float: left&quot; /&gt;
+&lt;img src=&quot;/assets/images/nba-clustering/full_pca_pca.png&quot; style=&quot;border-radius: 15px; float: right&quot; /&gt;
+&amp;lt;/div&amp;gt;&lt;/p&gt;
+
+&lt;p&gt;The limitations of this approach become clear in the graphs on the right. A DBSCAN is used to cluster the data, and achieves a great silhouette score of 0.647. In attempting to visualize this step, however, the two-dimensional chart created from the first two principal components which only capture 65% of the variance in the data makes it seem as if the clusters were chosen at random.&lt;/p&gt;
+
+&lt;p&gt;Another approach to visualizing high dimensional data is called t-distributed stochastic neighbor embedding, pronounced ‘tee-snee’ (like in sneeze). This approach also has interpretability issues but typically does a better job of visualizing in lower dimensions than a PCA, but surrenders even more interpretability. Essentially, it scatters the data points onto a low-dimensional ,easily visualizable space, like an area or a line, and allowing the members of it’s own class pull, and the others push, that point in a given direction on that low-dimensional space, determined by the distance of that datapoint to surrounding data points in the higher dimensional space.&lt;/p&gt;
+
+&lt;div class=&quot;landscape&quot;&gt;
+&lt;img src=&quot;/assets/images/nba-clustering/feat_eng_tsne_labelled.png&quot; style=&quot;border-radius: 15px; float: left&quot; /&gt;
+&lt;img src=&quot;/assets/images/nba-clustering/feat_eng_tsne.png&quot; style=&quot;border-radius: 15px; float: right&quot; /&gt;
+&lt;/div&gt;
+
+&lt;p&gt;The results of removing features during the process of feature engineering can be seen by contrasting this t-SNE visualization of a K-Means clustering algorithm on the post-feature-engineering data with the pair of plots above. The silhouette score, unremarkably, is an abysmal 0.145.&lt;/p&gt;
+
+&lt;p&gt;It is important to remember that the t-SNE generates plots which are approximations of how the clusters appear in higher-dimensional space.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;a id=&quot;discussion&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;discussion-of-results--limitations&quot;&gt;&lt;a href=&quot;#table_of_contents&quot;&gt;Discussion of Results &amp;amp; Limitations&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;On the whole, the silhouette score for most analyses were not great after feature engineering. One possible reason for this is that by removing some features in an attempt to reduce multicollinearity, a portion of the variance captured by those variables was not explained by either the remaining features or engineered features.&lt;/p&gt;
+
+&lt;p&gt;The reason for removing them, however, is solid. We want to identify the types of players in the NBA, and using metrics heavily influenced by team performance, personal skill, etc. can get in the way of establishing that. Indeed, further analysis is required to refine results.&lt;/p&gt;
+
+&lt;p&gt;Additionally, it is possible that the feature space is still too sparse, given the small nature of the dataset. It is worth considering the idea that basketball players are very multidimensional, and that the variance in their actions and play-styles is poorly captured in the 82 game regular season. By adjusting for minutes played, it is likely that a lot of additional variance is introduced when a player who plays relatively few minutes has their stats normalized to 36 minutes a game. Given that many teams realistically only play about 8 players any significant minutes every game, applying even more stringent limitations on players included in the analysis could improve results. This may also help to explain the steep drop-off seen in silhouette score when the analysis removes other overall efficacy statistics like box plus-minus, Value Over Replacement Player and Player Efficiency Rating.&lt;/p&gt;
+
+&lt;p&gt;Although the analysis produced mediocre clustering, what has been demonstrated throughout the course of this project is the ability to develop easily interpretable, non-collinear measures of basketball player performance.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;a id=&quot;next_steps&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;next-steps&quot;&gt;&lt;a href=&quot;#table_of_contents&quot;&gt;Next steps&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;&lt;a id=&quot;data_sources&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;data-sources&quot;&gt;&lt;a href=&quot;#next_steps&quot;&gt;Data Sources&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Although basketball-reference.com is a great resource for fans and basketball-analytics junkies, there is a limit to the granularity of the data available on that site. Other sites like https://stats.nba.com have more information that can help analysts paint however, the plain web-scraping techniques used in this analysis were not able to access any of that information, which would likely require a Selenium WebDriver-like solution, and is high on the priority list for improving this project.&lt;/p&gt;
+
+&lt;p&gt;Another major limitation in this project was the size of the dataset. Perhaps more, and more useful information could be gleamed by looking at the past few years of the NBA. Assuming trends in player behaviour are relatively stable over at least the last few years (not necessarily a safe assumption, as mentioned above), we could easily triple the size of our dataset and populate the feature-space with more data points.&lt;/p&gt;
+
+&lt;p&gt;Looking back through time also allows us to examine trends in player positions over time, which is also a very valuable insight, allowing players to up-skill themselves for the modern NBA.&lt;/p&gt;
+
+&lt;p&gt;&lt;a id=&quot;advanced_methods&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;advanced-methods&quot;&gt;&lt;a href=&quot;#next_steps&quot;&gt;Advanced Methods&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;Auto-encoder neural networks are another dimensionality reduction technique that is perhaps a more modern approach to this problem. Activations of the encoding layer perform similar functions as the eigenvalues in a principal component analysis. Auto-encoder neural nets have the added benefit of being able to capture non-linearity in the dataset.&lt;/p&gt;
+
+&lt;p&gt;In addition, it would be useful to explore more advanced clustering techniques. While we’ve only examined K-Means clustering and some DBSCAN clustering, there are plenty of algorithms that may offer benefits over the two implemented here. Attempting agglomerative clustering, affinity propagation, mean-shift clustering and expectation maximization using gaussian mixtures are at the top of the docket in terms of improvements to this project. Additionally, using more complex clustering metrics may also provide new insights. Cluster stability, perplexity on held-out data, being among the best ones to try.&lt;/p&gt;
+
+&lt;p&gt;&lt;a id=&quot;new_uses&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h3 id=&quot;new-uses&quot;&gt;&lt;a href=&quot;#next_steps&quot;&gt;New Uses&lt;/a&gt;&lt;/h3&gt;
+&lt;p&gt;One interesting thing that could be done with the findings in this project is some sort of transfer learning between clustering players, team composition based on the newly identified positions and potentially predicting performance in coming seasons. Much in the same vein, clustering-enabled identification of new player types is a player recommendation system based on the role each player fulfills in the new player archetype paradigm.&lt;/p&gt;
+
+&lt;p&gt;Another enticing use of the findings is in scouting of basketball prospects. Drawing comparisons between up-and-coming prospects and established stars gives teams additional information when deciding who they want to develop, who they want to trade or trade for, and who they may want to draft.&lt;/p&gt;
+
+&lt;p&gt;Finally, one benefit of establishing clusters of players based on player type is the ability to identify players who don’t fit into any category. Identifying whether a player is either a ‘unicorn’ or ‘dodo’, could be very beneficial for game-planning.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;&lt;a id=&quot;references&quot;&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&quot;references&quot;&gt;&lt;a href=&quot;#table_of_contents&quot;&gt;References&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;https://www.basketball-reference.com/
+https://www.statista.com/topics/967/national-basketball-association/
+https://dribbleanalytics.blog/2019/04/positional-clustering/
+https://www.wired.com/2012/04/analytics-basketball/&lt;/p&gt;</content><author><name>Remy Shea</name><email>shea.remy@gmail.com</email></author><category term="unsupervised learning" /><category term="sports analytics" /><category term="data science" /><summary type="html">NBA Player Clustering and Feature Engineering</summary></entry><entry><title type="html">Motion Detection in Dual-Mode Endomicroscopy</title><link href="http://localhost:4000/dme-motion/" rel="alternate" type="text/html" title="Motion Detection in Dual-Mode Endomicroscopy" /><published>2019-08-17T00:00:00-07:00</published><updated>2019-08-17T00:00:00-07:00</updated><id>http://localhost:4000/dme-motion</id><content type="html" xml:base="http://localhost:4000/dme-motion/">&lt;h1 id=&quot;motion-detection-in-dme&quot;&gt;Motion Detection in DME&lt;/h1&gt;
+&lt;h2 id=&quot;classifying-motion-in-video-data-from-a-dual-mode-endomicroscopic-setup-for-early-identification-of-precancerous-developments-in-the-oral-epithelium&quot;&gt;Classifying motion in video data from a dual-mode endomicroscopic setup for early identification of precancerous developments in the oral epithelium.&lt;/h2&gt;
+
+&lt;p&gt;Remy Shea, BC Cancer Agency, February 2019&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;iframe src=&quot;http://localhost:4000/assets/pdfs/DME Poster BCCRC.pdf&quot; frameborder=&quot;0&quot; width=&quot;960&quot; height=&quot;569&quot; allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;
+&lt;/iframe&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
+&lt;p&gt;This was a project I had completed while working at the British Columbia Cancer Research Center, in the Integrative Oncology department under Dr. Calum MacAulay. While the work shown here in this poster was not traditional data science work, my time at the CRC was the initial motivation for me to get into data science as a field. I am very proud of the work I was able to do in the year or so that I was there, and also to be able to present my findings at the SPIE Photonics West conference in San Francisco, in February of 2019. In the following sections, I will try to give a high level overview of the work, why it was important, and what advances it may lead to, for the understanding of a non-technical audience.&lt;/p&gt;
+
+&lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
+&lt;p&gt;The motivation for this work mainly stems from the high morbidity and massive impact on quality-of-life that are related to oral cancers. In 2013, oral cancers caused more than 135,000 deaths globally. The disease has 5-year survival rate of only 65% in the United States, far better than the survival rates in developing economies where the disease is both more, and increasingly more prevalent. Things like chewing tobacco and smoking are particularly disastrous in this regard.&lt;/p&gt;
+
+&lt;p&gt;As with all cancers, the likelihood of successfully treating oral cancers increases drastically the earlier you can identify the cancerous growth and begin treatment. Stages of dysplastic tissue transformation precede full-blown oral cancers, as the cells in the epithelium (surface layer of tissue) get progressively crowded (cancer is often characterized by cells multiplying uncontrollably) closer and closer to the surface of the tissue. It is easier to treat but harder to detect when the transformations are still only going on deeper within the tissue.&lt;/p&gt;
+
+&lt;p&gt;Part of the reason why oral caner is so deadly is that it has often proved alarmingly difficult to locate where exactly the cancerous tissue is, until it is too late. When reviewing images of the tongues of patients suffering from the late stages of oral pre-cancer AND using a 1-cm margin of error when excising tissue, teams of expert oncologists can miss significant portions of the deadly precancerous developments in almost 9% of cases. Missing half your tongue and still getting oral cancer is a pretty raw deal. There is clearly a lot of room to improve. Both in diagnostic power of the tests, as well as how early the pre-cancers can be caught and successfully treated.&lt;/p&gt;
+
+&lt;h2 id=&quot;dual-mode-endomicroscopy&quot;&gt;Dual Mode Endomicroscopy&lt;/h2&gt;
+&lt;p&gt;Dr.MacAulay’s group at the IO department of the BCCRC has in recent years developed a new way of looking at whats going on in the deeper layers of the oral epithelium (the inside lining of your mouth, and tongue), where the easier-to-treat, early pre-cancers lay. The imaging modality, named Dual-Mode Endomicroscopy combines Fluorescence Endomicroscopy and Diffuse Optical Microscopy into a single, affordable, compact wheely-cart system.&lt;/p&gt;
+
+&lt;h3 id=&quot;fluoresecence-endomicroscopy&quot;&gt;Fluoresecence Endomicroscopy&lt;/h3&gt;
+&lt;p&gt;Fluorescence Endomicroscopy (FE) uses a surface staining technique to highlight the cell nuclei, and gives useful information about the density of cells in the few surface layers of the epithelium. If there is severe dysplastic transformation going on, it’ll stick out like a sore thumb - a super-crowded image with way more nuclei relative to what we know healthy baselines should look like, given the location within the mouth and potentially other demographic information of the patient. However, this information is more-or-less limited to the surface of the epithelium. Since the surface-staining dye doesn’t get to make its way into the depths of the epithelium and be absorbed by the cell nuclei there, FE doesn’t give us the juicy scoop as to whats going on deeper in the tissue, which is what we’re looking for as previously mentioned. That’s where DOM comes in.&lt;/p&gt;
+
+&lt;h3 id=&quot;diffuse-optical-microscopy&quot;&gt;Diffuse Optical Microscopy&lt;/h3&gt;
+&lt;p&gt;Diffuse Optical Microscopy (DOM) is a much lower resolution, and much more finicky imaging technique. An extremely rough analogy is like a murder-mystery detective knocking on a wall and noticing the wall isn’t a wall &lt;em&gt;BUT A DOOR&lt;/em&gt;. You can get information on the density of a material just by interfacing with its surface. A more accurate description is a scaled down version of spatial frequency domain imaging (SFDI). By looking at the signal returned from projecting various structured patterns of light onto the tissue, we can gain information on the density of the tissue at various depths within the epithelium.&lt;/p&gt;</content><author><name>Remy Shea</name><email>shea.remy@gmail.com</email></author><category term="image processing" /><category term="classification" /><category term="biomedical optics" /><summary type="html">Motion Detection in Dual-Mode Endomicroscopy</summary></entry></feed>

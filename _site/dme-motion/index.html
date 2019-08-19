@@ -1,0 +1,550 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.16.5 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Motion Detection in Dual-Mode Endomicroscopy - Remy Shea</title>
+<meta name="description" content="Motion Detection in Dual-Mode Endomicroscopy">
+
+
+  <meta name="author" content="Remy Shea">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Remy Shea">
+<meta property="og:title" content="Motion Detection in Dual-Mode Endomicroscopy">
+<meta property="og:url" content="http://localhost:4000/dme-motion/">
+
+
+  <meta property="og:description" content="Motion Detection in Dual-Mode Endomicroscopy">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2019-08-17T00:00:00-07:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/dme-motion/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Remy Shea",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Remy Shea Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+           
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/projects/" >Projects</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/" >About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/" >Home</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        <img src="/assets/images/headshot.jpg" alt="Remy Shea" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Remy Shea</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Make Data Science Science Again.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Vancouver, B.C.</span>
+        </li>
+      
+
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/remyshea" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+          
+        
+          
+        
+          
+            <li><a href="https://linkedin.com/in/remy-shea" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> Linkedin</a></li>
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:shea.remy@gmail.com">
+            <meta itemprop="email" content="shea.remy@gmail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Motion Detection in Dual-Mode Endomicroscopy">
+    <meta itemprop="description" content="Motion Detection in Dual-Mode Endomicroscopy">
+    <meta itemprop="datePublished" content="August 17, 2019">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Motion Detection in Dual-Mode Endomicroscopy
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h1 id="motion-detection-in-dme">Motion Detection in DME</h1>
+<h2 id="classifying-motion-in-video-data-from-a-dual-mode-endomicroscopic-setup-for-early-identification-of-precancerous-developments-in-the-oral-epithelium">Classifying motion in video data from a dual-mode endomicroscopic setup for early identification of precancerous developments in the oral epithelium.</h2>
+
+<p>Remy Shea, BC Cancer Agency, February 2019</p>
+
+<hr />
+
+<iframe src="http://localhost:4000/assets/pdfs/DME Poster BCCRC.pdf" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+</iframe>
+
+<hr />
+
+<h2 id="introduction">Introduction</h2>
+<p>This was a project I had completed while working at the British Columbia Cancer Research Center, in the Integrative Oncology department under Dr. Calum MacAulay. While the work shown here in this poster was not traditional data science work, my time at the CRC was the initial motivation for me to get into data science as a field. I am very proud of the work I was able to do in the year or so that I was there, and also to be able to present my findings at the SPIE Photonics West conference in San Francisco, in February of 2019. In the following sections, I will try to give a high level overview of the work, why it was important, and what advances it may lead to, for the understanding of a non-technical audience.</p>
+
+<h2 id="background">Background</h2>
+<p>The motivation for this work mainly stems from the high morbidity and massive impact on quality-of-life that are related to oral cancers. In 2013, oral cancers caused more than 135,000 deaths globally. The disease has 5-year survival rate of only 65% in the United States, far better than the survival rates in developing economies where the disease is both more, and increasingly more prevalent. Things like chewing tobacco and smoking are particularly disastrous in this regard.</p>
+
+<p>As with all cancers, the likelihood of successfully treating oral cancers increases drastically the earlier you can identify the cancerous growth and begin treatment. Stages of dysplastic tissue transformation precede full-blown oral cancers, as the cells in the epithelium (surface layer of tissue) get progressively crowded (cancer is often characterized by cells multiplying uncontrollably) closer and closer to the surface of the tissue. It is easier to treat but harder to detect when the transformations are still only going on deeper within the tissue.</p>
+
+<p>Part of the reason why oral caner is so deadly is that it has often proved alarmingly difficult to locate where exactly the cancerous tissue is, until it is too late. When reviewing images of the tongues of patients suffering from the late stages of oral pre-cancer AND using a 1-cm margin of error when excising tissue, teams of expert oncologists can miss significant portions of the deadly precancerous developments in almost 9% of cases. Missing half your tongue and still getting oral cancer is a pretty raw deal. There is clearly a lot of room to improve. Both in diagnostic power of the tests, as well as how early the pre-cancers can be caught and successfully treated.</p>
+
+<h2 id="dual-mode-endomicroscopy">Dual Mode Endomicroscopy</h2>
+<p>Dr.MacAulay’s group at the IO department of the BCCRC has in recent years developed a new way of looking at whats going on in the deeper layers of the oral epithelium (the inside lining of your mouth, and tongue), where the easier-to-treat, early pre-cancers lay. The imaging modality, named Dual-Mode Endomicroscopy combines Fluorescence Endomicroscopy and Diffuse Optical Microscopy into a single, affordable, compact wheely-cart system.</p>
+
+<h3 id="fluoresecence-endomicroscopy">Fluoresecence Endomicroscopy</h3>
+<p>Fluorescence Endomicroscopy (FE) uses a surface staining technique to highlight the cell nuclei, and gives useful information about the density of cells in the few surface layers of the epithelium. If there is severe dysplastic transformation going on, it’ll stick out like a sore thumb - a super-crowded image with way more nuclei relative to what we know healthy baselines should look like, given the location within the mouth and potentially other demographic information of the patient. However, this information is more-or-less limited to the surface of the epithelium. Since the surface-staining dye doesn’t get to make its way into the depths of the epithelium and be absorbed by the cell nuclei there, FE doesn’t give us the juicy scoop as to whats going on deeper in the tissue, which is what we’re looking for as previously mentioned. That’s where DOM comes in.</p>
+
+<h3 id="diffuse-optical-microscopy">Diffuse Optical Microscopy</h3>
+<p>Diffuse Optical Microscopy (DOM) is a much lower resolution, and much more finicky imaging technique. An extremely rough analogy is like a murder-mystery detective knocking on a wall and noticing the wall isn’t a wall <em>BUT A DOOR</em>. You can get information on the density of a material just by interfacing with its surface. A more accurate description is a scaled down version of spatial frequency domain imaging (SFDI). By looking at the signal returned from projecting various structured patterns of light onto the tissue, we can gain information on the density of the tissue at various depths within the epithelium.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#biomedical-optics" class="page__taxonomy-item" rel="tag">biomedical optics</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#classification" class="page__taxonomy-item" rel="tag">classification</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#image-processing" class="page__taxonomy-item" rel="tag">image processing</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-08-17T00:00:00-07:00">August 17, 2019</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Motion+Detection+in+Dual-Mode+Endomicroscopy%20http%3A%2F%2Flocalhost%3A4000%2Fdme-motion%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fdme-motion%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fdme-motion%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/nba-clustering/" class="pagination--pager" title="NBA Player Clustering
+">Previous</a>
+    
+    
+      <a href="/subreddit-classification/" class="pagination--pager" title="Subreddit Classification
+">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/subreddit-classification/" rel="permalink">Subreddit Classification
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  5 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Subreddit Classification
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/nba-clustering/" rel="permalink">NBA Player Clustering
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  11 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">NBA Player Clustering and Feature Engineering
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+          <li><a href="https://www.facebook.com/remy.shea.9" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://github.com/remyshea/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://instagram.com/remy.shea" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+        
+          <li><a href="https://linkedin.com/in/remy-shea" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> Linkedin</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2019 Remy Shea. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+
+  </body>
+</html>

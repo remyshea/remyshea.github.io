@@ -1,0 +1,622 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.16.5 by Michael Rose
+  Copyright 2013-2019 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Subreddit Classification - Remy Shea</title>
+<meta name="description" content="Subreddit Classification">
+
+
+  <meta name="author" content="Remy Shea">
+
+
+<meta property="og:type" content="article">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="Remy Shea">
+<meta property="og:title" content="Subreddit Classification">
+<meta property="og:url" content="http://localhost:4000/subreddit-classification/">
+
+
+  <meta property="og:description" content="Subreddit Classification">
+
+
+
+
+
+
+
+  <meta property="article:published_time" content="2019-08-18T00:00:00-07:00">
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/subreddit-classification/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "Remy Shea",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+<link href="/feed.xml" type="application/atom+xml" rel="alternate" title="Remy Shea Feed">
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<!--[if IE ]>
+  <style>
+    /* old IE unsupported flexbox fixes */
+    .greedy-nav .site-title {
+      padding-right: 3em;
+    }
+    .greedy-nav button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 100%;
+    }
+  </style>
+<![endif]-->
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single">
+    <nav class="skip-links">
+  <h2 class="screen-reader-text">Skip links</h2>
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    <!--[if lt IE 9]>
+<div class="notice--danger align-center" style="margin: 0;">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</div>
+<![endif]-->
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+        <a class="site-title" href="/">
+           
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="/projects/" >Projects</a>
+            </li><li class="masthead__menu-item">
+              <a href="/about/" >About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/" >Home</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+<div itemscope itemtype="https://schema.org/Person">
+
+  
+    <div class="author__avatar">
+      
+
+      
+        <img src="/assets/images/headshot.jpg" alt="Remy Shea" itemprop="image">
+      
+    </div>
+  
+
+  <div class="author__content">
+    
+      <h3 class="author__name" itemprop="name">Remy Shea</h3>
+    
+    
+      <div class="author__bio" itemprop="description">
+        <p>Make Data Science Science Again.</p>
+
+      </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+        <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">
+          <i class="fas fa-fw fa-map-marker-alt" aria-hidden="true"></i> <span itemprop="name">Vancouver, B.C.</span>
+        </li>
+      
+
+      
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+            <li><a href="https://github.com/remyshea" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+          
+        
+          
+        
+          
+            <li><a href="https://linkedin.com/in/remy-shea" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> Linkedin</a></li>
+          
+        
+      
+
+      
+
+      
+        <li>
+          <a href="mailto:shea.remy@gmail.com">
+            <meta itemprop="email" content="shea.remy@gmail.com" />
+            <i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i> Email
+          </a>
+        </li>
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Subreddit Classification">
+    <meta itemprop="description" content="Subreddit Classification">
+    <meta itemprop="datePublished" content="August 18, 2019">
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title" itemprop="headline">Subreddit Classification
+</h1>
+          
+            <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  4 minute read
+</p>
+          
+        </header>
+      
+
+      <section class="page__content" itemprop="text">
+        
+        <h1 id="subreddit-classification">Subreddit Classification</h1>
+<h2 id="distinguishing-between-aita-and-tifu-posts">Distinguishing between AITA and TIFU posts</h2>
+
+<p>Remy Shea, April 2019</p>
+
+<p>This was analysis was performed during my time at General Assembly Seattle’s Data Science Immersive program. The code for this project can be seen on my GitHub, <a href="https://github.com/remyshea/subreddit-classification">here</a>.</p>
+
+<hr />
+
+<iframe src="http://localhost:4000/assets/pdfs/Subreddit Classification.pdf" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+</iframe>
+
+<hr />
+<h2 id="abstract">Abstract</h2>
+<p>In this project, the Reddit API was used to gather text-based data for a classification problem. Two corpora were assembled, consisting of documents which were individual user-made submissions to one of the two popular, and somewhat similar subreddits <code class="highlighter-rouge">/r/amitheasshole</code> and <code class="highlighter-rouge">/r/tifu</code> respectively.<br /> Of the many classification algorithms used to model the data, a Adaptive Boosting model with 60 estimators and a learning rate of 0.8 performed best. The model achieved an accuracy score of 96.1% on testing data, which was about a relative 2% increase in performance compared to the average model which achieved 94.3% accuracy.</p>
+
+<hr />
+<h2 id="libraries">Libraries</h2>
+<ul>
+  <li><code class="highlighter-rouge">numpy</code></li>
+  <li><code class="highlighter-rouge">pandas</code></li>
+  <li><code class="highlighter-rouge">matplotlib.pyplot</code></li>
+  <li><code class="highlighter-rouge">seaborn</code></li>
+  <li><code class="highlighter-rouge">requests</code></li>
+  <li><code class="highlighter-rouge">time</code></li>
+  <li><code class="highlighter-rouge">regex</code></li>
+  <li><code class="highlighter-rouge">stopwords</code> from <code class="highlighter-rouge">nltk</code>’s <code class="highlighter-rouge">corpus</code> library</li>
+  <li><code class="highlighter-rouge">CountVectorizer</code> &amp; <code class="highlighter-rouge">TfidfVectorizer</code> from <code class="highlighter-rouge">sklearn</code>’s <code class="highlighter-rouge">feature_extraction.text</code> library</li>
+  <li><code class="highlighter-rouge">Pipeline</code> from <code class="highlighter-rouge">sklearn</code>’s <code class="highlighter-rouge">pipeline</code> library</li>
+  <li><code class="highlighter-rouge">train_test_split</code>, <code class="highlighter-rouge">GridSearchCV</code> &amp; <code class="highlighter-rouge">RandomizedSearchCV</code> from <code class="highlighter-rouge">sklearn</code>’s <code class="highlighter-rouge">model_selection</code> library</li>
+  <li><code class="highlighter-rouge">LogisticRegression</code> from <code class="highlighter-rouge">sklearn</code>’s <code class="highlighter-rouge">linear_model</code> library</li>
+  <li><code class="highlighter-rouge">DecisionTreeClassifier</code> from <code class="highlighter-rouge">sklearn</code>’s <code class="highlighter-rouge">tree</code> library</li>
+  <li><code class="highlighter-rouge">GradientBoostingClassifier</code>, <code class="highlighter-rouge">AdaBoostClassifier</code>, <code class="highlighter-rouge">RandomForestClassifier</code> and <code class="highlighter-rouge">BaggingClassifier</code> from <code class="highlighter-rouge">sklearn</code>’s <code class="highlighter-rouge">ensemble</code> library</li>
+  <li><code class="highlighter-rouge">KNeighborsClassifier</code> from <code class="highlighter-rouge">sklearn</code>’s <code class="highlighter-rouge">neighbors</code> library</li>
+  <li><code class="highlighter-rouge">MultinomialNB</code> from <code class="highlighter-rouge">sklearn</code>’s <code class="highlighter-rouge">naive_bayes</code> library</li>
+  <li><code class="highlighter-rouge">SVC</code> from <code class="highlighter-rouge">sklearn</code>’s <code class="highlighter-rouge">svm</code> library</li>
+  <li><code class="highlighter-rouge">accuracy_score</code>, <code class="highlighter-rouge">roc_auc_score</code> and <code class="highlighter-rouge">confusion_matrix</code> from <code class="highlighter-rouge">sklearn</code>’s <code class="highlighter-rouge">metrics</code> library</li>
+</ul>
+
+<hr />
+<h2 id="outline">Outline</h2>
+<p>The challenge was to build a model that could correctly predict whether a document belonged to one of the two corpora based upon its text features. In layman’s terms, the question we are trying to answer is this:</p>
+<blockquote>
+  <h2 id="could-we-tell-the-difference-between-a-tifu-post-and-a-aita-post">Could we tell the difference between a TIFU post and a AITA post?</h2>
+  <h2 id="background">Background</h2>
+</blockquote>
+
+<p>If we are to interpret results from this analysis, it is necessary for us to understand the differences between the two subreddits in the first place.</p>
+<h3 id="rtifu">/r/tifu</h3>
+<p>The subreddit <code class="highlighter-rouge">/r/tifu</code> is a very popular subreddit whose name is an acronym for the humble admission: “Today, I F***ed Up”. The sub has 14.2 million subscribers at the time of the analysis, and can see hundreds of posts a day. Posters to this subreddit seek comfort in their darkest, most embarassing hour by trying to put on a good show; partaking in the fanciful retelling of their most recent cringe-inducing moments to an audience of Schadenfreude-hungry redditors. The posts are lengthy text segments, detailing every step of the build up to the OP’s (original poster) disasterous mess-up and they typically describe the painfully awkward aftermath as well. The tone is characterized by a notable humility, and a light-heartedness that befits a situation where the catastrophe is so bad, all that you can do is step back and laugh at yourself.</p>
+
+<h3 id="ramitheasshole">/r/amitheasshole</h3>
+<p>The subreddit <code class="highlighter-rouge">/r/amitheasshole</code>, often abbreviated ‘AITA’, is in some ways the opposite of <code class="highlighter-rouge">/r/tifu</code>. The sub has a much smaller 632 thousand subscribers. Posters to this subreddit typically come seeking an ostensibly impartial third party council of random internet strangers to adjudicate on a recent situation in the OP’s life that could not be solved through conventional means like logic, and conversation. These are almost always in interpersonal relationships, and forms an interesting divergence from TIFU in that way (posts to TIFU can often be embarassing incidents that happen alone, when no one is watching. Doesn’t make the embarassment sting any less, however). The posts also tend to be much lengthier, with the OP laying out their side of an argument or difficult situation, and in the comments, redditors weight in on whether or not they think the OP is the ‘a**hole’ in that situation. The mood is characterized often by a confrontational, defensive, and sometimes accusatory tone. This forms the basis for the comparison carried out here.</p>
+
+<hr />
+<h2 id="process">Process</h2>
+
+<p>The project followed a relatively simple datascience workflow</p>
+<ol>
+  <li>Define the Problem
+    <ul>
+      <li>Can we classify between posts belonging to the subreddits /r/tifu and /r/amitheasshole?</li>
+    </ul>
+  </li>
+  <li>Obtain the Data
+    <ul>
+      <li>Using Reddit’s API, collect and extract text documents from .JSON files</li>
+      <li>Tokenize and clean the data, apply appropriate preprocessing steps</li>
+    </ul>
+  </li>
+  <li>Explore the Data
+    <ul>
+      <li>Examine the efficacy of the two preprocessing method, choose one</li>
+      <li>Compare the relative frequencies of words in the common vocabularies of both subreddits</li>
+    </ul>
+  </li>
+  <li>Model the Data
+    <ul>
+      <li>For each model, fit to the training data using a grid search or randomized search</li>
+    </ul>
+  </li>
+  <li>Evaluate the Model
+    <ul>
+      <li>Score the model’s performance over a series of metrics on the ‘unseen’ training data</li>
+    </ul>
+  </li>
+  <li>Answer the Problem
+    <ul>
+      <li>Examine the models, extract the best performer, and answer the question: Can we classify between posts belonging to the subreddits /r/tifu and /r/amitheasshole?</li>
+    </ul>
+  </li>
+</ol>
+
+<hr />
+<h2 id="results">Results</h2>
+<p>The ultimate result is an emphatic yes: we can indeed determine whether a document of text belongs to one of /r/tifu or /r/amitheasshole. We can do so with around 96% accuracy using an adaptive boosting classifier comprised of 60 decision trees and a learning rate of 0.8. That being said, many alternative models also performed rather well, and the reason for choosing the AdaBoost classifier over other models was purely because of it’s slightly better performance, with not much regard to interpretability.</p>
+
+<hr />
+<h2 id="discussion">Discussion</h2>
+
+<p>I think this project was an interesting exploration of interacting with an API, being responsible for the gathering of data all the way through to the very end in answering the question we pose ourselves. I would have liked more time to examine the effect of different types of inputs beyond merely text features into our models, as well as perhaps taking a closer look at the overlap, and interesting divergence in the vocabularies of the two very similar subreddits.</p>
+
+<p>Additionally, using these models to predict entirely novel sources of text, like for example entirely different subreddits to estimate their proximity to either one or the other of the two examined subreddits would have been indeed very interesting. Finally, I would be interested in taking a closer look at the posts that the model incorrectly classified; perhaps there is some common theme among them, whose nature can be capture by another input to my model? I may return to this project at another time.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+  
+
+
+  
+  
+  
+
+  <p class="page__taxonomy">
+    <strong><i class="fas fa-fw fa-tags" aria-hidden="true"></i> Tags: </strong>
+    <span itemprop="keywords">
+    
+      
+      
+      <a href="/tags/#classification" class="page__taxonomy-item" rel="tag">classification</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#data-science" class="page__taxonomy-item" rel="tag">data science</a><span class="sep">, </span>
+    
+      
+      
+      <a href="/tags/#natural-language-processing" class="page__taxonomy-item" rel="tag">natural language processing</a>
+    
+    </span>
+  </p>
+
+
+
+
+        
+          <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> Updated:</strong> <time datetime="2019-08-18T00:00:00-07:00">August 18, 2019</time></p>
+        
+      </footer>
+
+      <section class="page__share">
+  
+    <h4 class="page__share-title">Share on</h4>
+  
+
+  <a href="https://twitter.com/intent/tweet?text=Subreddit+Classification%20http%3A%2F%2Flocalhost%3A4000%2Fsubreddit-classification%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fsubreddit-classification%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fsubreddit-classification%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="Share on LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+</section>
+
+
+      
+  <nav class="pagination">
+    
+      <a href="/dme-motion/" class="pagination--pager" title="Motion Detection in Dual-Mode Endomicroscopy
+">Previous</a>
+    
+    
+      <a href="#" class="pagination--pager disabled">Next</a>
+    
+  </nav>
+
+    </div>
+
+    
+  </article>
+
+  
+  
+    <div class="page__related">
+      <h4 class="page__related-title">You may also enjoy</h4>
+      <div class="grid__wrapper">
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/dme-motion/" rel="permalink">Motion Detection in Dual-Mode Endomicroscopy
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  3 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">Motion Detection in Dual-Mode Endomicroscopy
+</p>
+  </article>
+</div>
+
+        
+          
+
+
+
+<div class="grid__item">
+  <article class="archive__item" itemscope itemtype="https://schema.org/CreativeWork">
+    
+    <h2 class="archive__item-title" itemprop="headline">
+      
+        <a href="/nba-clustering/" rel="permalink">NBA Player Clustering
+</a>
+      
+    </h2>
+    
+      <p class="page__meta"><i class="far fa-clock" aria-hidden="true"></i> 
+
+
+
+
+  11 minute read
+</p>
+    
+    <p class="archive__item-excerpt" itemprop="description">NBA Player Clustering and Feature Engineering
+</p>
+  </article>
+</div>
+
+        
+      </div>
+    </div>
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+          <li><a href="https://www.facebook.com/remy.shea.9" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-facebook-square" aria-hidden="true"></i> Facebook</a></li>
+        
+      
+        
+          <li><a href="https://github.com/remyshea/" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-github" aria-hidden="true"></i> GitHub</a></li>
+        
+      
+        
+      
+        
+      
+        
+          <li><a href="https://instagram.com/remy.shea" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-instagram" aria-hidden="true"></i> Instagram</a></li>
+        
+      
+        
+          <li><a href="https://linkedin.com/in/remy-shea" rel="nofollow noopener noreferrer"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i> Linkedin</a></li>
+        
+      
+    
+
+    <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2019 Remy Shea. Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+  <script src="https://kit.fontawesome.com/4eee35f757.js"></script>
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+
+
+
+  </body>
+</html>
