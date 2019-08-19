@@ -7,20 +7,15 @@ tags: [image processing, classification, biomedical optics]
 excerpt: "Motion Detection in Dual-Mode Endomicroscopy"
 mathjax: true
 ---
-# Motion Detection in DME
 ## Classifying motion in video data from a dual-mode endomicroscopic setup for early identification of precancerous developments in the oral epithelium.
 
 Remy Shea, BC Cancer Agency, February 2019
 
----
-
 <iframe src="{{ site.url }}{{ site.baseurl }}/assets/pdfs/DME Poster BCCRC.pdf" frameborder="0" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
 </iframe>
 
----
-
 ## Introduction
-This was a project I had completed while working at the British Columbia Cancer Research Center, in the Integrative Oncology department under Dr. Calum MacAulay. While the work shown here in this poster was not traditional data science work, my time at the CRC was the initial motivation for me to get into data science as a field. I am very proud of the work I was able to do in the year or so that I was there, and also to be able to present my findings at the SPIE Photonics West conference in San Francisco, in February of 2019. In the following sections, I will try to give a high level overview of the work, why it was important, and what advances it may lead to, for the understanding of a non-technical audience.
+This was a project I had completed while working at the British Columbia Cancer Research Center, in the Integrative Oncology department under Dr. Calum MacAulay. While the work shown here in this poster was not traditional data science work, my time at the CRC was the initial motivation for me to get into data science as a field. I am very proud of the work I was able to do in the year or so that I was there, and was also able to present my findings at the SPIE Photonics West conference in San Francisco, in February of 2019. In the following sections, I will try my best to give a high level overview of the work, what we learned and why it was important, at a level understandable by someone without the technical background. Wish me luck!
 
 ## Background
 The motivation for this work mainly stems from the high morbidity and massive impact on quality-of-life that are related to oral cancers. In 2013, oral cancers caused more than 135,000 deaths globally. The disease has 5-year survival rate of only 65% in the United States, far better than the survival rates in developing economies where the disease is both more, and increasingly more prevalent. Things like chewing tobacco and smoking are particularly disastrous in this regard.

@@ -1,10 +1,10 @@
 ---
-title: "NBA Player Clustering"
+title: "Clustering NBA Players through Unsupervised Learning"
 date: 2019-08-17
 tags: [unsupervised learning, sports analytics, data science]
 #header:
   #images: "/assets/images/"
-excerpt: "NBA Player Clustering and Feature Engineering"
+excerpt: "Clustering NBA Players through Unsupervised Learning"
 mathjax: true
 ---
 <!-- # Dis a test
@@ -17,19 +17,15 @@ python code block:
       return z
 ``` -->
 
-# Clustering NBA Players through Unsupervised Learning
 ## Identifying player types and developing new metrics for evaluating professional basketball players.
 
 Remy Shea, May 2019
 
 This was initially developed as my capstone project for the Data Science Immersive program at General Assembly Seattle. The code for this project can be seen on my GitHub, [here](https://github.com/remyshea/nba-player-clustering).
 
----
-
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQGrMRqDZL0fvc6tOw9x8JMZbB8meHUS_Upsb-Eni9enLsXNzZBnYzQA8XEbGX49snl1AVwecbIfzFn/embed?start=false&loop=false&delayms=15000" frameborder="0" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
 </iframe>
 
----
 <a id = "table_of_contents"></a>
 ## Table of Contents
 1. <a href = "#motivation">Motivation</a>

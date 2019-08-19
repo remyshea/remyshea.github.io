@@ -5,19 +5,15 @@ tags: [natural language processing, classification, data science]
 excerpt: "Subreddit Classification"
 mathjax: true
 ---
-# Subreddit Classification
 ## Distinguishing between AITA and TIFU posts
 
 Remy Shea, April 2019
 
 This was analysis was performed during my time at General Assembly Seattle's Data Science Immersive program. The code for this project can be seen on my GitHub, [here](https://github.com/remyshea/subreddit-classification).
 
----
-
 <iframe src="{{ site.url }}{{ site.baseurl }}/assets/pdfs/Subreddit Classification.pdf" frameborder="0" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
 </iframe>
 
----
 ## Abstract
 In this project, the Reddit API was used to gather text-based data for a classification problem. Two corpora were assembled, consisting of documents which were individual user-made submissions to one of the two popular, and somewhat similar subreddits `/r/amitheasshole` and `/r/tifu` respectively.<br> Of the many classification algorithms used to model the data, a Adaptive Boosting model with 60 estimators and a learning rate of 0.8 performed best. The model achieved an accuracy score of 96.1% on testing data, which was about a relative 2% increase in performance compared to the average model which achieved 94.3% accuracy.
 

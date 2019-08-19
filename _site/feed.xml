@@ -1,16 +1,12 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-08-18T17:12:08-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Remy Shea</title><subtitle>Data Science Project Portfolio.</subtitle><author><name>Remy Shea</name><email>shea.remy@gmail.com</email></author><entry><title type="html">Subreddit Classification</title><link href="http://localhost:4000/subreddit-classification/" rel="alternate" type="text/html" title="Subreddit Classification" /><published>2019-08-18T00:00:00-07:00</published><updated>2019-08-18T00:00:00-07:00</updated><id>http://localhost:4000/subreddit-classification</id><content type="html" xml:base="http://localhost:4000/subreddit-classification/">&lt;h1 id=&quot;subreddit-classification&quot;&gt;Subreddit Classification&lt;/h1&gt;
-&lt;h2 id=&quot;distinguishing-between-aita-and-tifu-posts&quot;&gt;Distinguishing between AITA and TIFU posts&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-08-18T17:34:54-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Remy Shea</title><subtitle>Data Science Project Portfolio.</subtitle><author><name>Remy Shea</name><email>shea.remy@gmail.com</email></author><entry><title type="html">Subreddit Classification</title><link href="http://localhost:4000/subreddit-classification/" rel="alternate" type="text/html" title="Subreddit Classification" /><published>2019-08-18T00:00:00-07:00</published><updated>2019-08-18T00:00:00-07:00</updated><id>http://localhost:4000/subreddit-classification</id><content type="html" xml:base="http://localhost:4000/subreddit-classification/">&lt;h2 id=&quot;distinguishing-between-aita-and-tifu-posts&quot;&gt;Distinguishing between AITA and TIFU posts&lt;/h2&gt;
 
 &lt;p&gt;Remy Shea, April 2019&lt;/p&gt;
 
 &lt;p&gt;This was analysis was performed during my time at General Assembly Seattle’s Data Science Immersive program. The code for this project can be seen on my GitHub, &lt;a href=&quot;https://github.com/remyshea/subreddit-classification&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;hr /&gt;
-
 &lt;iframe src=&quot;http://localhost:4000/assets/pdfs/Subreddit Classification.pdf&quot; frameborder=&quot;0&quot; width=&quot;960&quot; height=&quot;569&quot; allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;
 &lt;/iframe&gt;
 
-&lt;hr /&gt;
 &lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;/h2&gt;
 &lt;p&gt;In this project, the Reddit API was used to gather text-based data for a classification problem. Two corpora were assembled, consisting of documents which were individual user-made submissions to one of the two popular, and somewhat similar subreddits &lt;code class=&quot;highlighter-rouge&quot;&gt;/r/amitheasshole&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;/r/tifu&lt;/code&gt; respectively.&lt;br /&gt; Of the many classification algorithms used to model the data, a Adaptive Boosting model with 60 estimators and a learning rate of 0.8 performed best. The model achieved an accuracy score of 96.1% on testing data, which was about a relative 2% increase in performance compared to the average model which achieved 94.3% accuracy.&lt;/p&gt;
 
@@ -100,7 +96,7 @@
 
 &lt;p&gt;I think this project was an interesting exploration of interacting with an API, being responsible for the gathering of data all the way through to the very end in answering the question we pose ourselves. I would have liked more time to examine the effect of different types of inputs beyond merely text features into our models, as well as perhaps taking a closer look at the overlap, and interesting divergence in the vocabularies of the two very similar subreddits.&lt;/p&gt;
 
-&lt;p&gt;Additionally, using these models to predict entirely novel sources of text, like for example entirely different subreddits to estimate their proximity to either one or the other of the two examined subreddits would have been indeed very interesting. Finally, I would be interested in taking a closer look at the posts that the model incorrectly classified; perhaps there is some common theme among them, whose nature can be capture by another input to my model? I may return to this project at another time.&lt;/p&gt;</content><author><name>Remy Shea</name><email>shea.remy@gmail.com</email></author><category term="natural language processing" /><category term="classification" /><category term="data science" /><summary type="html">Subreddit Classification</summary></entry><entry><title type="html">NBA Player Clustering</title><link href="http://localhost:4000/nba-clustering/" rel="alternate" type="text/html" title="NBA Player Clustering" /><published>2019-08-17T00:00:00-07:00</published><updated>2019-08-17T00:00:00-07:00</updated><id>http://localhost:4000/nba-clustering</id><content type="html" xml:base="http://localhost:4000/nba-clustering/">&lt;!-- # Dis a test
+&lt;p&gt;Additionally, using these models to predict entirely novel sources of text, like for example entirely different subreddits to estimate their proximity to either one or the other of the two examined subreddits would have been indeed very interesting. Finally, I would be interested in taking a closer look at the posts that the model incorrectly classified; perhaps there is some common theme among them, whose nature can be capture by another input to my model? I may return to this project at another time.&lt;/p&gt;</content><author><name>Remy Shea</name><email>shea.remy@gmail.com</email></author><category term="natural language processing" /><category term="classification" /><category term="data science" /><summary type="html">Subreddit Classification</summary></entry><entry><title type="html">Clustering NBA Players through Unsupervised Learning</title><link href="http://localhost:4000/nba-clustering/" rel="alternate" type="text/html" title="Clustering NBA Players through Unsupervised Learning" /><published>2019-08-17T00:00:00-07:00</published><updated>2019-08-17T00:00:00-07:00</updated><id>http://localhost:4000/nba-clustering</id><content type="html" xml:base="http://localhost:4000/nba-clustering/">&lt;!-- # Dis a test
 
 python code block:
 ```python
@@ -110,19 +106,15 @@ python code block:
       return z
 ``` --&gt;
 
-&lt;h1 id=&quot;clustering-nba-players-through-unsupervised-learning&quot;&gt;Clustering NBA Players through Unsupervised Learning&lt;/h1&gt;
 &lt;h2 id=&quot;identifying-player-types-and-developing-new-metrics-for-evaluating-professional-basketball-players&quot;&gt;Identifying player types and developing new metrics for evaluating professional basketball players.&lt;/h2&gt;
 
 &lt;p&gt;Remy Shea, May 2019&lt;/p&gt;
 
 &lt;p&gt;This was initially developed as my capstone project for the Data Science Immersive program at General Assembly Seattle. The code for this project can be seen on my GitHub, &lt;a href=&quot;https://github.com/remyshea/nba-player-clustering&quot;&gt;here&lt;/a&gt;.&lt;/p&gt;
 
-&lt;hr /&gt;
-
 &lt;iframe src=&quot;https://docs.google.com/presentation/d/e/2PACX-1vQGrMRqDZL0fvc6tOw9x8JMZbB8meHUS_Upsb-Eni9enLsXNzZBnYzQA8XEbGX49snl1AVwecbIfzFn/embed?start=false&amp;amp;loop=false&amp;amp;delayms=15000&quot; frameborder=&quot;0&quot; width=&quot;960&quot; height=&quot;569&quot; allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;
 &lt;/iframe&gt;
 
-&lt;hr /&gt;
 &lt;p&gt;&lt;a id=&quot;table_of_contents&quot;&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;h2 id=&quot;table-of-contents&quot;&gt;Table of Contents&lt;/h2&gt;
 &lt;ol&gt;
@@ -284,20 +276,15 @@ python code block:
 &lt;p&gt;https://www.basketball-reference.com/
 https://www.statista.com/topics/967/national-basketball-association/
 https://dribbleanalytics.blog/2019/04/positional-clustering/
-https://www.wired.com/2012/04/analytics-basketball/&lt;/p&gt;</content><author><name>Remy Shea</name><email>shea.remy@gmail.com</email></author><category term="unsupervised learning" /><category term="sports analytics" /><category term="data science" /><summary type="html">NBA Player Clustering and Feature Engineering</summary></entry><entry><title type="html">Motion Detection in Dual-Mode Endomicroscopy</title><link href="http://localhost:4000/dme-motion/" rel="alternate" type="text/html" title="Motion Detection in Dual-Mode Endomicroscopy" /><published>2019-08-17T00:00:00-07:00</published><updated>2019-08-17T00:00:00-07:00</updated><id>http://localhost:4000/dme-motion</id><content type="html" xml:base="http://localhost:4000/dme-motion/">&lt;h1 id=&quot;motion-detection-in-dme&quot;&gt;Motion Detection in DME&lt;/h1&gt;
-&lt;h2 id=&quot;classifying-motion-in-video-data-from-a-dual-mode-endomicroscopic-setup-for-early-identification-of-precancerous-developments-in-the-oral-epithelium&quot;&gt;Classifying motion in video data from a dual-mode endomicroscopic setup for early identification of precancerous developments in the oral epithelium.&lt;/h2&gt;
+https://www.wired.com/2012/04/analytics-basketball/&lt;/p&gt;</content><author><name>Remy Shea</name><email>shea.remy@gmail.com</email></author><category term="unsupervised learning" /><category term="sports analytics" /><category term="data science" /><summary type="html">Clustering NBA Players through Unsupervised Learning</summary></entry><entry><title type="html">Motion Detection in Dual-Mode Endomicroscopy</title><link href="http://localhost:4000/dme-motion/" rel="alternate" type="text/html" title="Motion Detection in Dual-Mode Endomicroscopy" /><published>2019-08-17T00:00:00-07:00</published><updated>2019-08-17T00:00:00-07:00</updated><id>http://localhost:4000/dme-motion</id><content type="html" xml:base="http://localhost:4000/dme-motion/">&lt;h2 id=&quot;classifying-motion-in-video-data-from-a-dual-mode-endomicroscopic-setup-for-early-identification-of-precancerous-developments-in-the-oral-epithelium&quot;&gt;Classifying motion in video data from a dual-mode endomicroscopic setup for early identification of precancerous developments in the oral epithelium.&lt;/h2&gt;
 
 &lt;p&gt;Remy Shea, BC Cancer Agency, February 2019&lt;/p&gt;
-
-&lt;hr /&gt;
 
 &lt;iframe src=&quot;http://localhost:4000/assets/pdfs/DME Poster BCCRC.pdf&quot; frameborder=&quot;0&quot; width=&quot;960&quot; height=&quot;569&quot; allowfullscreen=&quot;true&quot; mozallowfullscreen=&quot;true&quot; webkitallowfullscreen=&quot;true&quot;&gt;
 &lt;/iframe&gt;
 
-&lt;hr /&gt;
-
 &lt;h2 id=&quot;introduction&quot;&gt;Introduction&lt;/h2&gt;
-&lt;p&gt;This was a project I had completed while working at the British Columbia Cancer Research Center, in the Integrative Oncology department under Dr. Calum MacAulay. While the work shown here in this poster was not traditional data science work, my time at the CRC was the initial motivation for me to get into data science as a field. I am very proud of the work I was able to do in the year or so that I was there, and also to be able to present my findings at the SPIE Photonics West conference in San Francisco, in February of 2019. In the following sections, I will try to give a high level overview of the work, why it was important, and what advances it may lead to, for the understanding of a non-technical audience.&lt;/p&gt;
+&lt;p&gt;This was a project I had completed while working at the British Columbia Cancer Research Center, in the Integrative Oncology department under Dr. Calum MacAulay. While the work shown here in this poster was not traditional data science work, my time at the CRC was the initial motivation for me to get into data science as a field. I am very proud of the work I was able to do in the year or so that I was there, and was also able to present my findings at the SPIE Photonics West conference in San Francisco, in February of 2019. In the following sections, I will try my best to give a high level overview of the work, what we learned and why it was important, at a level understandable by someone without the technical background. Wish me luck!&lt;/p&gt;
 
 &lt;h2 id=&quot;background&quot;&gt;Background&lt;/h2&gt;
 &lt;p&gt;The motivation for this work mainly stems from the high morbidity and massive impact on quality-of-life that are related to oral cancers. In 2013, oral cancers caused more than 135,000 deaths globally. The disease has 5-year survival rate of only 65% in the United States, far better than the survival rates in developing economies where the disease is both more, and increasingly more prevalent. Things like chewing tobacco and smoking are particularly disastrous in this regard.&lt;/p&gt;
