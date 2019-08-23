@@ -109,9 +109,13 @@ analytics:
 author:
   name             : "Remy Shea"
   avatar           : "/assets/images/headshot.jpg"
-  bio              : "Python and SQL in syntax well written,\n\n
-  Visualizations that help people listen,\n\n
-  ETL, NLP, Machine Learning,\n\n
+  bio              : "
+  Python and SQL in syntax well written,\n
+  
+  Visualizations that help people listen,\n
+
+  ETL, NLP, Machine Learning,\n
+
   These are a few of my favorite things!"
 
   location         : "Vancouver, B.C."
