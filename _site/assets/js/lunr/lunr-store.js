@@ -9,7 +9,7 @@ var store = [{
         "tags": ["image processing","classification","biomedical optics"],
         "url": "http://localhost:4000/dme-motion/",
         "teaser":null},{
-        "title": "Subreddit Classification",
+        "title": "[Project] Subreddit Classification",
         "excerpt":"Distinguishing between AITA and TIFU posts Remy Shea, April 2019 This was analysis was performed during my time at General Assembly Seattle’s Data Science Immersive program. The code for this project can be seen on my GitHub, here. Abstract In this project, the Reddit API was used to gather text-based...","categories": [],
         "tags": ["natural language processing","classification","data science"],
         "url": "http://localhost:4000/subreddit-classification/",
