@@ -109,7 +109,10 @@ analytics:
 author:
   name             : "Remy Shea"
   avatar           : "/assets/images/headshot.jpg"
-  bio              : "Make Data Science Science Again."
+  bio              : "Python and SQL in syntax well written,
+  Visualizations that help people listen,
+  ETL, NLP, Machine Learning,
+  These are a few of my favorite things!"
 
   location         : "Vancouver, B.C."
   email            : "shea.remy@gmail.com"
