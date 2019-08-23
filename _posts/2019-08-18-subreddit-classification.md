@@ -1,8 +1,8 @@
 ---
-title: "Subreddit Classification"
+title: "[Project] Subreddit Classification"
 date: 2019-08-18
 tags: [natural language processing, classification, data science]
-excerpt: "Subreddit Classification"
+excerpt: "Classifying between the /r/AITA and /r/TIFU and subreddits using natural language processing and machine learning."
 mathjax: true
 ---
 ## Distinguishing between AITA and TIFU posts
